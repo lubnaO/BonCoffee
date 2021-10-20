@@ -113,7 +113,7 @@ h1{
 .wrapper{
     width: 100%;
    position: relative;
-   z-index: -9;
+   z-index: -9;   /*used to make show side bar appear**/
 }
 .slider-container{
 width: 100%;
@@ -241,17 +241,17 @@ background-color: transparent;
     .slider-container{
         width: 100%;
         position: relative;
-        height: 60vh;
+        height: 70vh;
         z-index: -2;
         }
         .slide-imgae img{
             width: 100%;
-           height: 60vh;
+           height: 70vh;
            background-size: cover;
         }
        .slide-imgae .overlay{   
            width: 100%;
-           height: 60vh;
+           height: 70vh;
            background-color: rgb(45, 41, 41);
            position: absolute;
            opacity: 0.3;
@@ -341,6 +341,31 @@ background-color: transparent;
         padding: 25px;
         border-radius: 4px;
     }
+    .info-banner .book-button button:first-child{
+        padding: 8px 2px;
+        margin-top: 15px;
+        border: none;
+        background:linear-gradient(to right, #e1e8fd, #CDA45E);
+        border-radius: 7px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin: 0px 10px;
+    }
+    .info-banner .book-button button:nth-child(2) {
+        background-color: transparent;
+        padding: 8px 2px;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 3px;
+        border-radius: 7px;
+        border: 1px solid beige;
+        margin-top: 15px;
+        color: white;
+        margin: 0px 10px;
+    }
+
 }
 .prev-btn{
    color: #fff;
@@ -399,6 +424,10 @@ background-color: transparent;
      background-color:#ebe7e0 ;
  }
  /**Intro section*/
+ .intro-image{
+     position: relative;
+     z-index: -20;
+ }
  .intro-section .intro-image img{
      max-width: 40%;
      box-shadow: 0px 0px 0px 2px var(--main-color);
