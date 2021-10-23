@@ -4,17 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
-/**
-Theme name: JoisCorp
-FirstColor:#08526d;
-Secondcolor:#ec1c23 
+
 /**Global variable**/
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    perspective: 0;
 }
 body{
     font-family: 'IM Fell Double Pica', serif;
@@ -465,6 +461,10 @@ background-color: transparent;
  .offer-setions .card-offer:hover p{
      color: #fff;
  }
+ .offer-setions .card-offer img{
+     position: relative;
+     z-index: 6;
+ }
 .offer-setions .card-offer::before{
     content: '';
     height: 75px;
@@ -531,6 +531,9 @@ background-color: transparent;
         clip-path: polygon(52% 0, 24% 50%, 46% 100%, 21% 100%, 0% 50%, 25% 0%);
         margin: 0px 23px;
     }
+}
+.product{
+    perspective: 10px;
 }
 .product img{
     position: relative;
