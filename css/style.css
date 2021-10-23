@@ -66,19 +66,20 @@ h1{
     list-style: none;
     border-bottom: 1px solid rgb(231, 228, 222);
     z-index: 1;
+    perspective: 10px;
 }
 .sidebar ul li a{
     color: white;
     font-size: 22px;
     text-decoration: none;
-    /* position: relative;  اضفته في الاخير */
+    
  }
 .sidebar ul li a:hover{
     color: white;
     transition: 0.2s;
     font-weight: 700;
 } 
-/* .sidebar ul li::before{
+.sidebar ul li::before{
     content: '';
     display: block;
     z-index: -1;
@@ -94,7 +95,7 @@ h1{
 }
 .sidebar ul li:hover:before{
   left: 0;
-} */
+}
   .close-icon{
   font-size: 30px;
   position: absolute;
@@ -104,7 +105,7 @@ h1{
 } 
 @media(max-width: 987px){
     .sidebar.active{
-        width: 370px;
+        width: 320px;
         transition: 1s all ease-in;
     }
 }
@@ -298,10 +299,12 @@ opacity: 0;    }
     font-size: 19px;
     letter-spacing: 3px;
     margin: 0px 10px;
+    cursor: pointer;
 }
 .info-banner .book-button button:first-child:hover{
     background: transparent;
     border: 1px solid beige;
+    cursor: pointer;
 }
 .info-banner .book-button button:nth-child(2) {
     background-color: transparent;
@@ -314,9 +317,11 @@ opacity: 0;    }
     margin-top: 15px;
     color: white;
     margin: 0px 10px;
+    cursor: pointer;
 }
 .info-banner .book-button button:nth-child(2):hover{
     background:linear-gradient(to right, #d1dcfd, #CDA45E);
+    cursor: pointer;
 }
 @media (max-width:1024px) {
     .info-banner{
