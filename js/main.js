@@ -122,19 +122,19 @@ var swiper = new Swiper(".myTry", {
   });
 
   //Scroll show up 
-  // let showUpButton = document.querySelector('.up');
-  // window.onscroll = function(){
-  //   if(this.scrollY >= 200){
-  //     showUpButton.classList.add("show");
-  //   }
-  //     else{
-  //       showUpButton.classList.remove('show');
+  let showUpButton = document.querySelector('.up');
+  window.onscroll = function(){
+    if(this.scrollY >= 200){
+      showUpButton.classList.add("show");
+    }
+      else{
+        showUpButton.classList.remove('show');
 
-  //     }
-  //   }
-  // showUpButton.onclick = function(){
-  //   window.scrollTo({
-  //     top:0,
-  //     behavior: "smooth",
-  //   });
-  // }
+      }
+    }
+  showUpButton.onclick = function(){
+    window.scrollTo({
+      top:0,
+      behavior: "smooth",
+    });
+  }

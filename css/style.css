@@ -105,7 +105,7 @@ h1{
 } 
 @media(max-width: 987px){
     .sidebar.active{
-        width: 100%;
+        width: 350px;
         transition: 1s all ease-in;
     }
 }
@@ -401,8 +401,6 @@ background-color: transparent;
 }
 .navigation-dots{
     text-align: center;
-    position: relative;
-    z-index: -9;
 }
 .dots{
     display: inline-block;
