@@ -14,7 +14,7 @@ Secondcolor:#ec1c23
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    perspective: 0;
+    perspective: 200px;
 }
 body{
     font-family: 'IM Fell Double Pica', serif;
@@ -401,6 +401,8 @@ background-color: transparent;
 }
 .navigation-dots{
     text-align: center;
+    position: relative;
+    z-index: -9;
 }
 .dots{
     display: inline-block;
