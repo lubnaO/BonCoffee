@@ -14,7 +14,7 @@ Secondcolor:#ec1c23
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    perspective: 200px;
+    perspective: 0;
 }
 body{
     font-family: 'IM Fell Double Pica', serif;
@@ -105,7 +105,7 @@ h1{
 } 
 @media(max-width: 987px){
     .sidebar.active{
-        width: 350px;
+        width: 100%;
         transition: 1s all ease-in;
     }
 }

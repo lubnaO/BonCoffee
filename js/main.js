@@ -1,14 +1,14 @@
 
-let MenuBtn = document.querySelector('.open-icon');
-let CloseBtn = document.querySelector('.close-icon');
+// let MenuBtn = document.querySelector('.open-icon');
+// let CloseBtn = document.querySelector('.close-icon');
 
-MenuBtn.addEventListener('click', function(){
-    document.querySelector('.sidebar').classList.add('active');
-})
+// MenuBtn.addEventListener('click', function(){
+//     document.querySelector('.sidebar').classList.add('active');
+// })
 
-CloseBtn.addEventListener('click', function(){
-    document.querySelector('.sidebar').classList.remove('active');
-})
+// CloseBtn.addEventListener('click', function(){
+//     document.querySelector('.sidebar').classList.remove('active');
+// })
 
 //Slider Banneer
 let prevBtn = document.querySelector('.prev-btn');
