@@ -51,14 +51,14 @@ prevBtn.addEventListener('click', function(){
 })
 
 
-// var autoSlider = setInterval(function(){        
-//         remove();
-//         slideNumber++;
-//         if(slideNumber > (numberOfSlides -1)){
-//             slideNumber = 0;}
-//         add();
+var autoSlider = setInterval(function(){        
+        remove();
+        slideNumber++;
+        if(slideNumber > (numberOfSlides -1)){
+            slideNumber = 0;}
+        add();
 
-//  },4900);
+ },4900);
 
 
 //dots functions start
