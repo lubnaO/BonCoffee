@@ -32,6 +32,13 @@ h1{
     margin: -46px 0 0;
     font-size: 34px;
 }
+@media(max-width:540px){
+    h1{
+        color: var(--main-color);
+        font-family: 'Damion', cursive;
+        font-size: 55px;
+    }
+}
 /*banner section start**/
 .background{
     background-color: rgba(19, 19, 19, 0.10);
@@ -656,7 +663,7 @@ opacity: 0;    }
     font-weight: 700;
 }
 .count h6{
-    font-size: 15px;
+    font-size: 18px;
     color: #fff;
     text-align: center;
     z-index: 2;
@@ -674,12 +681,12 @@ opacity: 0;    }
     }
     .count span{
         color:#fff;
-        font-size: 20px;
+        font-size: 22px;
         z-index: 2;
         font-weight: 700;
     }
     .count h6{
-        font-size: 10px;
+        font-size: 14px;
         color: #fff;
         text-align: center;
         z-index: 2;
@@ -777,7 +784,7 @@ opacity: 0;    }
 }
 .swiper-pagination{
     position: relative;
-    margin-top: 30px !important;
+    /* margin-top: 70px !important; */
 }
 /**customer section end**/
 /**footer section start*/
@@ -806,6 +813,7 @@ opacity: 0;    }
 }
 .header-title-footer h3{
     color: var(--main-color);
+    font-size: 20px;
 }
 .header-title-footer i{
     border: 1px solid #ebebeb;
