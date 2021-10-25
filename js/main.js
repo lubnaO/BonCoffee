@@ -84,7 +84,7 @@ var swiper = new Swiper(".myTry", {
     slidesPerGroup: 1,   
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -138,3 +138,38 @@ var swiper = new Swiper(".myTry", {
       behavior: "smooth",
     });
   }
+
+  //Count number section
+  let yearsExperience = document.getElementById('count1');
+  let happyCustomers = document.getElementById('count2');
+  let workingDay = document.getElementById('count3');
+
+function Counter(ele, start, end, duration){
+  var current = start;
+  let increment = 0;
+  if(start < end){
+    increment +=1;
+  }else{
+    increment -=1;
+  }
+
+
+  let timerCounter = setInterval(() => {
+    current = current + increment;
+    ele.textContent = current;
+    if(current == end){
+      clearInterval(timerCounter);
+    }
+  }, duration);
+
+}
+
+
+Counter(yearsExperience, 1, 100, 50);
+Counter(happyCustomers, 1, 800, 0.00001);
+Counter(workingDay, 1, 7, 100);
+
+
+
+
+
