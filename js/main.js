@@ -139,37 +139,38 @@ var swiper = new Swiper(".myTry", {
     });
   }
 
-  //Count number section
-  let yearsExperience = document.getElementById('count1');
-  let happyCustomers = document.getElementById('count2');
-  let workingDay = document.getElementById('count3');
 
-function Counter(ele, start, end, duration){
-  var current = start;
-  let increment = 0;
-  if(start < end){
-    increment +=1;
-  }else{
-    increment -=1;
+
+let counter = document.querySelectorAll('.counter');
+let speed = 200;
+
+window.onscroll = function(){
+if(this.scrollY >= 1200){
+
+counter.forEach(function(element) {
+  let updateCount = function(){
+
+      
+    let target = +element.getAttribute('data-target');
+
+    let countText = +element.textContent;    //1
+    
+    let calcCount = target / speed;    //3000/200  =15
+
+    if(countText < target ){           //1 < 3000     it is mean if less than target, add more                          //< اقل
+      element.textContent = countText + calcCount;  //1 + 15
+        setTimeout(updateCount,9);
+    }else{
+      element.textContent = target;
+
+    }
+   
   }
 
-
-  let timerCounter = setInterval(() => {
-    current = current + increment;
-    ele.textContent = current;
-    if(current == end){
-      clearInterval(timerCounter);
-    }
-  }, duration);
+  updateCount();
+})
 
 }
-
-
-Counter(yearsExperience, 1, 100, 50);
-Counter(happyCustomers, 1, 800, 0.00001);
-Counter(workingDay, 1, 7, 100);
-
-
-
+}
 
 

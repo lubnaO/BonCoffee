@@ -589,6 +589,10 @@ opacity: 0;    }
 .product-details h4:first-child{
     color: var(--main-color);
     padding: 10px 2px 2px 0px;
+    font-size: 20px;
+}
+.product-details h4:last-child{
+    font-size: 20px;
 }
 .row-menu-coffee{
     display: flex;
@@ -622,51 +626,37 @@ opacity: 0;    }
     height: 100%;
     width: 100%;
     background-color: rgb(45, 41, 41);
-    opacity: 0.7;
+    opacity: 0.4;
 }
 .count{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid rgb(185, 185, 185, 0.09); */
     border-bottom: 5px solid var(--main-color);
-    /* border-radius: 10px; */
+    border-radius: 10px;
     padding: 20px 20px;
     margin: 80px 10px;
     position: relative;
     overflow: hidden;
 }
-/* .count::before{
-content: '';
-position: absolute;
-background-color: var(--main-color);
-height: 150%;
-width: 150%;
-animation: animate 7s linear infinite;
-}
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(390deg);
-    }
-}
-.count::after{
-    content: '';
+
+.count span::before{
+    content: "+";
     position: absolute;
-    background: rgb(243, 238, 220);
-    border-radius: 10px;
-    inset: 4px;
-} */
+    height: 100%;
+    width: 100%;
+    margin-left: -25px;
+}
+
 .count span{
     color:#fff;
     font-size: 40px;
     z-index: 2;
+    font-weight: 700;
 }
 .count h6{
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
     text-align: center;
     z-index: 2;
@@ -677,19 +667,22 @@ animation: animate 7s linear infinite;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 2px solid rgb(185, 185, 185, 0.09);
+        border-bottom: 5px solid var(--main-color);
         border-radius: 10px;
         padding: 10px 10px;
         margin: 80px 10px;
     }
     .count span{
-        color: var(--main-color);
+        color:#fff;
         font-size: 20px;
+        z-index: 2;
+        font-weight: 700;
     }
     .count h6{
         font-size: 10px;
-        color: var(--main-color);
+        color: #fff;
         text-align: center;
+        z-index: 2;
     }
 }
 /**Reservation section start*/
