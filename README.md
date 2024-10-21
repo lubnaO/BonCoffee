@@ -1,11 +1,13 @@
-# AppLanding-page
-1)Project Description it is website for creative and design agancy in web development and app field.
+# Coffee Shop 
+1)Project Description: Coffee Shop online provides a menu, products, and what products are available.
 
 2)Technologies
 
-Bootstrap to make webaite responsive and align with all screen size.
-CSS3
-google fonts
-fontawsome library
-lineicons library
-wow js library
+-Bootstrap to make the website responsive and align with all screen sizes.
+-CSS3
+-Google fonts
+-font awesome library
+-line icons library
+-Swiper Js library
+-
+![BonCoffee](https://github.com/user-attachments/assets/c6dcb649-a5d7-4e6d-90df-2fb88afbb352)
